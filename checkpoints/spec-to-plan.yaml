@@ -1,0 +1,91 @@
+# Spec-to-Plan Traceability Checkpoint
+metadata:
+  generated: "2026-10-07"
+  source_spec: "frontend-plan.md"
+  target_plan: "plan.md"
+
+summary:
+  total_requirements: 10
+  covered_requirements: 10
+  missing_requirements: 0
+  coverage_percentage: 100.0
+
+requirements:
+  - req_id: "REQ-001"
+    req_description: "Listar fontes reais da API no dashboard"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-3"
+      phase_name: "Dashboard geral"
+      items: ["2.1", "2.2", "3.1", "6.3"]
+  - req_id: "REQ-002"
+    req_description: "Exibir estados de freshness e qualidade"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-2"
+      phase_name: "Fundação"
+      items: ["2.1", "2.3", "3.1"]
+  - req_id: "REQ-003"
+    req_description: "Filtrar e atualizar fontes"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-3"
+      phase_name: "Dashboard geral"
+      items: ["3.2"]
+  - req_id: "REQ-004"
+    req_description: "Exibir detalhes, métricas, regras e histórico"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-4"
+      phase_name: "Detalhes e histórico"
+      items: ["2.1", "2.2", "4.1", "4.2"]
+  - req_id: "REQ-005"
+    req_description: "Cadastrar, editar e excluir fontes"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-5"
+      phase_name: "Cadastro, edição e exclusão"
+      items: ["2.2", "5.1", "5.2", "5.3"]
+  - req_id: "REQ-006"
+    req_description: "Apresentar loading, estado vazio e erros"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-2"
+      phase_name: "Fundação"
+      items: ["2.2", "2.3", "4.2", "5.1", "5.3"]
+  - req_id: "REQ-007"
+    req_description: "Funcionar em telas desktop e menores"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-1"
+      phase_name: "Setup"
+      items: ["1.2", "2.3", "4.2"]
+  - req_id: "REQ-008"
+    req_description: "Cobrir cliente, estados e formulários com testes"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-6"
+      phase_name: "Qualidade, integração e entrega"
+      items: ["6.1"]
+  - req_id: "REQ-009"
+    req_description: "Rodar via Docker e Nginx"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-6"
+      phase_name: "Qualidade, integração e entrega"
+      items: ["1.1", "6.2"]
+  - req_id: "REQ-010"
+    req_description: "Documentar arquitetura e manter desacoplamento"
+    priority: "P1"
+    plan_mapping:
+      phase: "Phase-6"
+      phase_name: "Qualidade, integração e entrega"
+      items: ["1.1", "2.2", "6.3", "6.4"]
+
+missing_requirements: []
+orphan_plan_items: []
+validation:
+  passed: true
+  errors: []
+  warnings:
+    - "Os REQ IDs foram derivados do frontend-plan.md porque a especificação original não os possuía."

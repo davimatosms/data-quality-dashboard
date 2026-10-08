@@ -1,0 +1,121 @@
+# Plan-to-Tasks Traceability Checkpoint
+metadata:
+  generated: "2026-10-07"
+  source_plan: "plan.md"
+  target_tasks: "plan.md"
+
+summary:
+  total_plan_items: 17
+  covered_plan_items: 17
+  missing_plan_items: 0
+  coverage_percentage: 100.0
+  total_tasks_generated: 26
+  orphan_tasks: 0
+
+phases:
+  - phase_id: "Phase-1"
+    phase_name: "Setup"
+    items:
+      - item_id: "1.1"
+        tasks: ["T001", "T002"]
+      - item_id: "1.2"
+        tasks: ["T003", "T004"]
+  - phase_id: "Phase-2"
+    phase_name: "Fundação"
+    items:
+      - item_id: "2.1"
+        tasks: ["T005"]
+      - item_id: "2.2"
+        tasks: ["T006", "T007"]
+      - item_id: "2.3"
+        tasks: ["T008", "T009"]
+  - phase_id: "Phase-3"
+    phase_name: "Dashboard geral"
+    items:
+      - item_id: "3.1"
+        tasks: ["T010", "T011"]
+      - item_id: "3.2"
+        tasks: ["T012"]
+  - phase_id: "Phase-4"
+    phase_name: "Detalhes e histórico"
+    items:
+      - item_id: "4.1"
+        tasks: ["T013", "T014"]
+      - item_id: "4.2"
+        tasks: ["T015"]
+  - phase_id: "Phase-5"
+    phase_name: "Cadastro, edição e exclusão"
+    items:
+      - item_id: "5.1"
+        tasks: ["T016"]
+      - item_id: "5.2"
+        tasks: ["T017"]
+      - item_id: "5.3"
+        tasks: ["T018"]
+  - phase_id: "Phase-6"
+    phase_name: "Qualidade, integração e entrega"
+    items:
+      - item_id: "6.1"
+        tasks: ["T019", "T020", "T021", "T022", "T026"]
+      - item_id: "6.2"
+        tasks: ["T023", "T026"]
+      - item_id: "6.3"
+        tasks: ["T024", "T026"]
+      - item_id: "6.4"
+        tasks: ["T025"]
+
+missing_plan_items: []
+orphan_tasks: []
+upstream_trace:
+  - plan_item: "1.1"
+    source_requirements: ["REQ-007", "REQ-009", "REQ-010"]
+    tasks: ["T001", "T002"]
+  - plan_item: "1.2"
+    source_requirements: ["REQ-007"]
+    tasks: ["T003", "T004"]
+  - plan_item: "2.1"
+    source_requirements: ["REQ-001", "REQ-002", "REQ-004", "REQ-005"]
+    tasks: ["T005"]
+  - plan_item: "2.2"
+    source_requirements: ["REQ-001", "REQ-004", "REQ-005", "REQ-006"]
+    tasks: ["T006", "T007"]
+  - plan_item: "2.3"
+    source_requirements: ["REQ-002", "REQ-006", "REQ-007"]
+    tasks: ["T008", "T009"]
+  - plan_item: "3.1"
+    source_requirements: ["REQ-001", "REQ-002"]
+    tasks: ["T010", "T011"]
+  - plan_item: "3.2"
+    source_requirements: ["REQ-003"]
+    tasks: ["T012"]
+  - plan_item: "4.1"
+    source_requirements: ["REQ-004"]
+    tasks: ["T013", "T014"]
+  - plan_item: "4.2"
+    source_requirements: ["REQ-004", "REQ-006", "REQ-007"]
+    tasks: ["T015"]
+  - plan_item: "5.1"
+    source_requirements: ["REQ-005", "REQ-006"]
+    tasks: ["T016"]
+  - plan_item: "5.2"
+    source_requirements: ["REQ-005"]
+    tasks: ["T017"]
+  - plan_item: "5.3"
+    source_requirements: ["REQ-005", "REQ-006"]
+    tasks: ["T018"]
+  - plan_item: "6.1"
+    source_requirements: ["REQ-008"]
+    tasks: ["T019", "T020", "T021", "T022", "T026"]
+  - plan_item: "6.2"
+    source_requirements: ["REQ-009"]
+    tasks: ["T023", "T026"]
+  - plan_item: "6.3"
+    source_requirements: ["REQ-001", "REQ-004", "REQ-005", "REQ-010"]
+    tasks: ["T024", "T026"]
+  - plan_item: "6.4"
+    source_requirements: ["REQ-010"]
+    tasks: ["T025"]
+validation:
+  passed: true
+  errors: []
+  warnings: []
